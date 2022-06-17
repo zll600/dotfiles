@@ -64,6 +64,19 @@ set encoding=utf-8
 " TextEdit might fail if hidden is not set.
 set hidden
 
+hi Pmenu ctermfg=black ctermbg=DarkGreen
+hi PmenuSel ctermfg=white ctermbg=DarkGreen
+hi CocErrorSign ctermfg=red  guibg=red
+hi CocErrorfloat ctermfg=white ctermbg=red
+hi CocInfoSign ctermfg=blue
+hi CocInfofloat ctermfg=white ctermbg=blue
+hi CocWarningSign ctermfg=white ctermbg=yellow
+" I have trIEd all of the below,but to no avail
+" hi CocHighlightText ctermfg=black ctermbg=DarkGreen
+" hi CocHintSign ctermfg=black ctermbg=DarkGreen
+" hi CocHintHighlight ctermfg=black ctermbg=DarkGreen
+" hi CocHintVirtualText ctermfg=black
+
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
@@ -108,7 +121,6 @@ let g:gitgutter_sign_removed          = '-'    " 自定义删除指示符
 let g:gitgutter_sign_modified_removed = '->'   " 自定义既修改又删除指示符
 
 " ===== vim-go ====
-
 let g:go_template_autocreate = 0
 
 call plug#begin('~/.vim/plugged')
