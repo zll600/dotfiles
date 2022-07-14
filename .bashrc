@@ -27,3 +27,4 @@ function git-branch-prompt {
     local branch=`git-branch-name`
     if [ $branch ]; then printf " [%s]" $branch; fi
 }
+. "$HOME/.cargo/env"

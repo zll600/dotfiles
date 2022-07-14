@@ -54,7 +54,6 @@ let g:coc_global_extension = [
             \ 'coc-vetur',
             \ 'coc-jedi',
             \ 'coc-yaml',
-            \ 'coc-go',
             \ 'coc-tsserver', 'coc-html', 'coc-yank', 'coc-sql']
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
@@ -141,7 +140,7 @@ call plug#begin('~/.vim/plugged')
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
 " Multiple Plug commands can be written in a single line using | separators
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -169,7 +168,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'liuchengxu/vista.vim'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-markdown'
-
+Plug 'rust-lang/rust.vim'
 
 
 " Initialize plugin system
