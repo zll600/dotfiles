@@ -54,7 +54,12 @@ let g:coc_global_extension = [
             \ 'coc-vetur',
             \ 'coc-jedi',
             \ 'coc-yaml',
-            \ 'coc-tsserver', 'coc-html', 'coc-yank', 'coc-sql']
+            \ 'coc-tsserver',
+            \ 'coc-html',
+            \ 'coc-yank',
+            \ 'coc-sql',
+            \ 'coc-snippets',
+            \ 'coc-rust-analyzer']
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
