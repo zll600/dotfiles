@@ -169,7 +169,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'liuchengxu/vista.vim'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-markdown'
-
+Plug 'rust-lang/rust.vim'
 
 
 " Initialize plugin system
