@@ -11,6 +11,8 @@
       }
   }
 },
-"diagnostic.enableSign": false
+"diagnostic.enableSign": false,
+"rust-analyzer.updates.prompt": false,
+"rust-analyzer.server.path": "~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rust-analyzer"
 }
 
