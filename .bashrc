@@ -26,9 +26,11 @@ function git-branch-prompt {
 	local branch=$(git-branch-name)
 	if [ $branch ]; then printf " [%s]" $branch; fi
 }
+<<<<<<< HEAD
 
 # for rust
-export RUSTBIN="$HOME/.cargo/env"
+. "$HOME/.cargo/env"
+export RUSTBIN="$HOME/.cargo/bin"
 
 # for .local directory
 export LOCALBIN="$HOME/.local/bin"

@@ -54,8 +54,12 @@ let g:coc_global_extension = [
             \ 'coc-vetur',
             \ 'coc-jedi',
             \ 'coc-yaml',
-            \ 'coc-go',
-            \ 'coc-tsserver', 'coc-html', 'coc-yank', 'coc-sql']
+            \ 'coc-tsserver',
+            \ 'coc-html',
+            \ 'coc-yank',
+            \ 'coc-sql',
+            \ 'coc-snippets',
+            \ 'coc-rust-analyzer']
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
@@ -141,7 +145,7 @@ call plug#begin('~/.vim/plugged')
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
 " Multiple Plug commands can be written in a single line using | separators
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
