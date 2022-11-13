@@ -26,7 +26,6 @@ function git-branch-prompt {
 	local branch=$(git-branch-name)
 	if [ $branch ]; then printf " [%s]" $branch; fi
 }
-<<<<<<< HEAD
 
 # for rust
 . "$HOME/.cargo/env"
@@ -39,3 +38,4 @@ export PATH=$GOBIN:$RUSTBIN:$LOCALBIN:$PATH
 
 # for autojump
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+source /usr/share/nvm/init-nvm.sh
