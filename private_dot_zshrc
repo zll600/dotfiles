@@ -179,6 +179,7 @@ export LOCALBIN="$HOME/.local/bin"
 # cuda
 export CUDA_BIN=/opt/cuda/bin
 
+# for ghcup
 export GHCUP_BIN="$HOME/.ghcup/bin"
 
 export PATH=$GHCUP_BIN:$CUDA_BIN:$GOBIN:$RUSTBIN:$LOCALBIN:$PATH
