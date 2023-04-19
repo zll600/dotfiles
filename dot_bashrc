@@ -1,0 +1,32 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+
+# for default editor
+export EDITOR='vim'
+
+# for nvm
+source /usr/share/nvm/init-nvm.sh
+
+# for autojump in zsh
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+. "$HOME/.cargo/env"
+
+# for go
+export GOPATH=$HOME/Code/go
+export GOBIN=$GOPATH/bin
+
+# for rust
+. "$HOME/.cargo/env"
+export RUSTBIN="$HOME/.cargo/bin"
+
+# for .local directory
+export LOCALBIN="$HOME/.local/bin"
+
+export PATH=$GOBIN:$RUSTBIN:$LOCALBIN:$PATH
