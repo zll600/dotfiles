@@ -1,0 +1,29 @@
+name: Orders CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "orders/**"
+      - ".github/workflows/orders-ci.yml"
+  pull_request:
+    paths:
+      - "orders/**"
+      - ".github/workflows/orders-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/frantic1048/blend:0.2.9@sha256:160f81639000d7bfcb63a1e1c92c0dea763915bb8f204b539694b3a4e92bb25c
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
+      - name: Check orders
+        run: blend check
+
+      - name: Check order formatting
+        run: blend format --check
