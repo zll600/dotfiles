@@ -50,7 +50,7 @@ let { Order, .. } = import "../order.contract.ncl" in
           # JavaScript
 
           # ESLint
-# make ESLint use current Node.js version instead of VSCode's
+          # make ESLint use current Node.js version instead of VSCode's
 
           # Diff
 
@@ -128,13 +128,13 @@ let { Order, .. } = import "../order.contract.ncl" in
         name = "keybindings.json",
         format = "jsonc",
         from_config = [
-            {
-              args = { text = "\\\r\n" },
-              command = "workbench.action.terminal.sendSequence",
-              key = "shift+enter",
-              when = "terminalFocus",
-            },
-          ]
+          {
+            args = { text = "\\\r\n" },
+            command = "workbench.action.terminal.sendSequence",
+            key = "shift+enter",
+            when = "terminalFocus",
+          },
+        ]
       }
     ],
     when = { os = ["linux", "darwin"] },
