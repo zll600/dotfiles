@@ -4,7 +4,7 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
 -- Set font size
-config.font_size = 14
+config.font_size = 12
 
 -- Set color scheme (e.g., 'Catppuccin Mocha', 'Tokyo Night', or 'Dracula')
 config.color_scheme = 'Catppuccin Mocha'
