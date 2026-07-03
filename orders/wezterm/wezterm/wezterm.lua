@@ -15,5 +15,13 @@ config.use_fancy_tab_bar = false
 -- Hide the native window title bar for a sleeker look
 config.window_decorations = 'RESIZE'
 
+config.keys = {
+  {
+    key = 'Enter',
+    mods = 'ALT',
+    action = wezterm.action.DisableDefaultAssignment,
+  },
+}
+
 -- Finally, return the configuration to WezTerm
 return config
