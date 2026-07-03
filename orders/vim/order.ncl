@@ -2,6 +2,10 @@ let { Order, .. } = import "../order.contract.ncl" in
 {
   blend = {
     prefix = ["~/"],
-    files = [],
+    files = [
+      {
+        from_file = ".vimrc",
+      },
+    ],
   },
 } | Order
