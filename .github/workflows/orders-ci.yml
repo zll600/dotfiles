@@ -18,7 +18,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/frantic1048/blend:0.2.9@sha256:160f81639000d7bfcb63a1e1c92c0dea763915bb8f204b539694b3a4e92bb25c
+      image: ghcr.io/frantic1048/blend:0.2.12@sha256:bae278d09e86b7b0f590be8099117151279eb14c0277fe2d4cca6feec7b5f021
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
