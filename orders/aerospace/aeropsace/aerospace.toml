@@ -1,3 +1,4 @@
+#:tombi toml-version = "v1.1.0"
 # This file is used as ~/.aerospace.toml via a symlink from this directory.
 # Keep the symlink in place, or copy this file to ~/.aerospace.toml.
 
