@@ -14,15 +14,15 @@ let { Order, .. } = import "../order.contract.ncl" in
       {
         name = "settings.json",
         format = "jsonc",
-        # These settings are not suitable for sync.
-        ignore = [
-          "window.zoomLevel",
-          "workbench.colorTheme",
-          "workbench.iconTheme",
-          "playwright.env",
-          "chat.commandCenter.enabled",
-        ],
         from_config = {
+          # Keep these machine-local settings in Target without syncing them back.
+          # Missing settings stay absent on a new machine.
+          "window.zoomLevel" = 'Unmanaged,
+          "workbench.colorTheme" = 'Unmanaged,
+          "workbench.iconTheme" = 'Unmanaged,
+          "playwright.env" = 'Unmanaged,
+          "chat.commandCenter.enabled" = 'Unmanaged,
+
           # Editor settings
           # JetBrains Mono
           # https://github.com/JetBrains/JetBrainsMono/wiki/OpenType-features
