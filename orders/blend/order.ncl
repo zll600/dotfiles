@@ -6,7 +6,7 @@ let { Order, BlendOrder, .. } = import "../order.contract.ncl" in
       {
         name = "config.toml",
         from_config = {
-          sandbox = "force",
+          sandbox = "prefer",
         },
       },
     ],

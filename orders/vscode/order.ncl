@@ -113,8 +113,6 @@ let { Order, .. } = import "../order.contract.ncl" in
           "python.defaultInterpreterPath" = "/opt/homebrew/bin/python3",
           "notebook.lineNumbers" = "on",
           "makefile.configureOnOpen" = true,
-          "gitlens.ai.vscode.model" = "copilot:gpt-4.1",
-          "gitlens.ai.model" = "vscode",
           "diffEditor.ignoreTrimWhitespace" = false,
           "cmake.pinnedCommands" = [
             "workbench.action.tasks.configureTaskRunner",
@@ -122,6 +120,9 @@ let { Order, .. } = import "../order.contract.ncl" in
           ],
           "chat.mcp.gallery.enabled" = true,
           "C_Cpp.default.compilerPath" = "/usr/bin/clang++",
+          "js/ts.updateImportsOnFileMove.enabled" = "always",
+          "files.insertFinalNewline" = false,
+          "terminal.integrated.initialHint" = false,
         },
       },
       {
