@@ -7,15 +7,15 @@ let { Order, .. } = import "../order.contract.ncl" in
         name = ".tmux.conf",
         format = "space_pair_lines",
         from_config = [
-            [
-              "set",
-              "-g extended-keys on",
-            ],
-            [
-              "set",
-              "-g extended-keys-format csi-u",
-            ],
+          [
+            "set",
+            "-g extended-keys on",
           ],
+          [
+            "set",
+            "-g extended-keys-format csi-u",
+          ],
+        ],
       },
     ],
   },
